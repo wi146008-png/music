@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>作品展示網站 | Spec-Driven Portfolio</title>
+  <link rel="stylesheet" href="./css/tokens.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="./index.html" class="nav-brand">~/portfolio</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html">作品集</a></li>
+          <li><a href="./about.html">關於我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span id="hero-badge" class="hero-badge">Portfolio</span>
+        <h1 id="hero-headline">載入中...</h1>
+        <p id="hero-bio"></p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>精選專案與原創作品</h2>
+          <div id="filter-bar" class="filter-bar"></div>
+        </div>
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Built with Spec-Driven Rules (CLAUDE.md / AGENTS.md) · Hosted on GitHub Pages
+    </div>
+  </footer>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
